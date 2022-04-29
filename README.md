@@ -1,1 +1,2 @@
-# challenge-w3-password-generator
+# Challenge Week 3 - Password Generator
+
