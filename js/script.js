@@ -78,15 +78,13 @@ var getPwdSpecial = function() {
     alert("Excellent, you answered " + specialCharacters + " to having special characters");
     return specialCharacters;
   }
-
+  
 }
 
 
-var start = function() {
-
-  alert("Hello, I will generate a strong password for you. But first, I have a few question. Let's get started!");
-
+var generatePassword = function() {
   // creating password requirements object
+  alert("Hello, I will generate a strong password for you. But first, I have a few question. Let's get started!");
   var pwReq = {
     length: getPwdLength(),
     lower: getPwdLower(),
@@ -94,17 +92,35 @@ var start = function() {
     numeric: getPwdNumeric(),
     special: getPwdSpecial()
   }
-  console.log("Password Req Length: " + pwReq.length);
-  console.log("Password Req lower: " + pwReq.lower);
-  console.log("Password Req upper: " + pwReq.upper);
-  console.log("Password Req numeric: " + pwReq.numeric);
-  console.log("Password Req special: " + pwReq.special);
-  console.log(pwReq);
+
+
+  if (pwReq.lower == "no" && pwReq.upper == "no" && pwReq.numeric == "no" && pwReq.special == "no") {
+    alert("You have to select at least one category: lower case, upper case, numeric or special characters. Please try again.");
+    generatePassword();
+  } else {
+    alert("generating password");
+    lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+    upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+    numeric = [1,2,3,4,5,6,7,8,9,0];
+    special = [" ","!","\"","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","\"","^","_","`","{","|","}","~"];
+    
+    // for (i=0; i < special.length; i++) {
+    //   console.log(special[i]);
+    // }
+
+    
+  }
 }
 
-var generatePassword = function() {
+
+generatePassword();
+
   
-}
+
+
+
+
+
 
 
 
