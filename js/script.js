@@ -102,7 +102,9 @@ var start = function() {
   console.log(pwReq);
 }
 
-
+var generatePassword = function() {
+  
+}
 
 
 
