@@ -26,4 +26,37 @@ THEN the password is either displayed in an alert or written to the page
 
 ## Screenshots
 
+Desktop Main Screen  
+![desktop main screen](images/screenshot-desktop-main.jpg)
+
+Desktop Example Screen  
+![desktop main screen](images/screenshot-desktop-example.jpg)
+
+Mobile Main Screen  
+![mobile main screen](images/screenshot-mobile-main.jpg)
+
+Mobile Example Screen  
+![mobile example screen](images/screenshot-mobile-example.jpg)
+
 ## Live Site
+[Password Generator Live Site](https://joebarbone.github.io/challenge-w3-password-generator/)
+
+## GitHub Repo
+[Password Generator GitHub Repo](https://github.com/JoeBarbone/challenge-w3-password-generator)
+
+---
+
+## Extra Credit
+In the real world, I'm not a huge fan of alert prompts to accept user input. This example requires a few minor changes to the source files. I added an input box instead of using alert prompts for the password length.
+
+Checkboxes determine which character sets to use for password creation.
+
+CSS changes were added to keep the look consistent with the existing site.
+
+Alert boxes are still used for input validation errors such as password length violations and not selecting at least one character set.
+
+## Extra Credit Live Site
+[Extra Credit - PassGen Live Site](https://joebarbone.github.io/passgen/)
+
+## Extra Credit GitHub Repo
+[Password Generator GitHub Repo](https://github.com/JoeBarbone/passgen)
